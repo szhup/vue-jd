@@ -11,7 +11,6 @@
     </div>
 </template>
 <script>
-    import 'swiper/dist/css/swiper.css'
     export default {
         name: 'carrousel',
         props:{
@@ -38,11 +37,12 @@
             }
         },
         mounted() {
-            this.swiper.slideTo(3, 1000, false)
+            // this.swiper.slideTo(2, 1000, false)
         }
     }
 </script>
 <style lang="stylus">
+    @import 'swiper/dist/css/swiper.css'
     .swiper-img
         width 100%
 </style>
